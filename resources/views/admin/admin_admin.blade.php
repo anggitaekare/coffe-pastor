@@ -55,8 +55,8 @@
             <a href="/admin/view" class="active"><span class="las la-users"></span>
                 <span>Data Admin</span></a>
 
-            <a href="/admin/dineintrx/view"><span class="las la-shopping-cart"></span>
-                <span>Data Transaksi</span></a>
+            <!-- <a href="/admin/dineintrx/view"><span class="las la-shopping-cart"></span>
+                <span>Data Transaksi</span></a> -->
 
             <a href="/admin/reservationtrx/view"><span class="las la-plus"></span>
                 <span>Data Reservasi</span></a>
@@ -64,11 +64,11 @@
             <a href="/admin/product/view"><span class="las la-hamburger"></span>
                 <span>Data Produk</span></a>
 
-            <a href="/admin/seat/view"><span class="las la-chair"></span>
+            <!-- <a href="/admin/seat/view"><span class="las la-chair"></span>
                 <span>Data Seat</span></a>
 
             <a href="/admin/dineintrx/recap"><span class="las la-shopping-bag"></span>
-                <span>Data Recap Transaction</span></a>
+                <span>Data Recap Transaction</span></a> -->
 
             <a href="/admin/logout"><span class="las la-sign-out-alt"></span>
                 <span>Logout</span></a>
@@ -82,11 +82,11 @@
                 </label>
                 Dashboard
             </h2>
-            <h1>CAFE TERSERAH</h1>
+            <h1>PASTOR CAFFE</h1>
             <div class="user-wrapper">
                 <img src="logo1.png" width="40px" height="40px" alt="profile">
                 <div class="profile-wrapper">
-                    <h4>bestot</h4>
+                    <h4>admin</h4>
                     <small>Super Admin</small>
                 </div>
             </div>
