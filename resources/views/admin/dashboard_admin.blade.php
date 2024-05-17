@@ -74,7 +74,7 @@
             <!-- <a href="/admin/dineintrx/view"><span class="las la-shopping-cart"></span>
                 <span>Data Transaksi</span></a> -->
 
-            <a href="/admin/reservationtrx/view"><span class="las la-plus"></span>
+            <a href="/admin/reservasion/view"><span class="las la-plus"></span>
                 <span>Data Reservasi</span></a>
 
             <a href="/admin/product/view"><span class="las la-hamburger"></span>

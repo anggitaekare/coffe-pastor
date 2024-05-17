@@ -19,4 +19,10 @@ class ReservasionController extends Controller
         $reservasion->save();
         return redirect('/reservation');
     } 
+
+    public function getReservationTransactions()
+    {
+        $reservasion = Reservasion::all();
+        return view('admin.reservasion', ['reservasions' => $reservasion]);
+    }
 }

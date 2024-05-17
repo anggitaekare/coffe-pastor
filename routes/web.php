@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\Reservasion;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReservasionController;
 use App\Http\Controllers\ContactController;
@@ -32,6 +31,7 @@ Route::prefix('/admin')->group(function () {
     Route::middleware(['myauth'])->group(function () {
         Route::get('/dashboard', [AdminController::class, 'dashboardAdmin']);
         Route::get('/view', [AdminController::class, 'getAdmin']);
+        Route::get('/reservasion/view', [ReservasionController::class, 'getReservationTransactions']);
         Route::get('/logout', [AdminController::class, 'logoutAdmin']);
 
     });
@@ -42,7 +42,7 @@ Route::prefix('/admin')->group(function () {
 
 Route::prefix('/Reservasion')->group(function () {
     Route::post('/process', [ReservasionController::class, 'insertReservasion']);
-    Route::get('/view/{id}', [ReservasionController::class, 'getReservationTransactionsUser']);
+
 });
 
 Route::prefix('/Contact')->group(function () {
