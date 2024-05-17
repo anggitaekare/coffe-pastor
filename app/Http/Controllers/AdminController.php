@@ -16,6 +16,12 @@ class AdminController extends Controller
         $admin->password = $request->input("password");
         $admin->save();
     }
+
+    public function getAdmin(Request $request)
+    {
+        $admin = Admin::find($request->session()->get('token'));
+        return view('admin.admin_admin', ['admin' => $admin]);
+    }
     
     public function loginAdmin(Request $request)
     {

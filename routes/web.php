@@ -31,8 +31,11 @@ Route::prefix('/admin')->group(function () {
 
     Route::middleware(['myauth'])->group(function () {
         Route::get('/dashboard', [AdminController::class, 'dashboardAdmin']);
+        Route::get('/view', [AdminController::class, 'getAdmin']);
         Route::get('/logout', [AdminController::class, 'logoutAdmin']);
+
     });
+
 
 });
 
