@@ -51,4 +51,11 @@ class AdminController extends Controller
         $request->session()->forget('token');
         return redirect('/admin/loginView');
     }
+
+    public function getView(Request $request)
+    {
+        
+        $admin = Admin::find($request->session()->get('token'));
+        return view('admin.admin_admin', ['admin' => $admin]);
+    }
 }

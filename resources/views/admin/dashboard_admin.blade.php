@@ -77,8 +77,11 @@
             <a href="/admin/reservasion/view"><span class="las la-plus"></span>
                 <span>Data Reservasi</span></a>
 
-            <a href="/admin/product/view"><span class="las la-hamburger"></span>
+            <a href="/admin/produk/view"><span class="las la-hamburger"></span>
                 <span>Data Produk</span></a>
+
+            <a href="/admin/kategori/view" class=""><span class="las la-hamburger"></span>
+                <span>Data Kategori</span></a>
 
             <!-- <a href="/admin/seat/view"><span class="las la-chair"></span>
                 <span>Data Seat</span></a>
@@ -120,7 +123,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="/admin/dineintrx/view">
+                <!-- <a href="/admin/dineintrx/view">
                     <div class="cards-single">
                         <div>
                             <h1></h1>
@@ -130,8 +133,8 @@
                             <span class="las la-shopping-cart"></span>
                         </div>
                     </div>
-                </a>
-                <a href="/admin/reservationtrx/view">
+                </a> -->
+                <a href="/admin/reservasion/view">
                     <div class="cards-single">
                         <div>
                             <h1></h1>
@@ -142,7 +145,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="/admin/product/view">
+                <a href="/admin/produk/view">
                     <div class="cards-single">
                         <div>
                             <h1></h1>

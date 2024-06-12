@@ -78,8 +78,11 @@
             <a href="/admin/reservasion/view" class="active"><span class="las la-plus"></span>
                 <span>Data Reservasi</span></a>
 
-            <a href="/admin/product/view"><span class="las la-hamburger"></span>
+            <a href="/admin/produk/view"><span class="las la-hamburger"></span>
                 <span>Data Produk</span></a>
+
+            <a href="/admin/kategori/view" class=""><span class="las la-hamburger"></span>
+                <span>Data Kategori</span></a>
 
             <!-- <a href="/admin/seat/view"><span class="las la-chair"></span>
                 <span>Data Seat</span></a>

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PASTOR CAFFE</title>
+    <title>PASTOR CAFE</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
@@ -33,7 +33,7 @@
     <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
             <a href="index.html" class="navbar-brand px-lg-4 m-0">
-                <h1 class="m-0 display-4 text-uppercase text-white">PASTOR CAFFE</h1>
+                <h1 class="m-0 display-4 text-uppercase text-white">PASTOR CAFE</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
                     <a href="/" class="nav-item nav-link">Home</a>
                     <a href="/about" class="nav-item nav-link">About</a>
                     <a href="/service" class="nav-item nav-link active">Service</a>
-                    <a href="/menu" class="nav-item nav-link">Menu</a>
+                    <a href="/viewMenu" class="nav-item nav-link">Menu</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu text-capitalize">
@@ -182,7 +182,7 @@
         </div>
         <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5"
             style="border-color: rgba(256, 256, 256, .1) !important;">
-            <p class="mb-2 text-white">Copyright &copy; All Rights Reserved.</a></p>
+            <p class="mb-2 text-white">Copyright &copy; ITATS.</a></p>
             
         </div>
     </div>

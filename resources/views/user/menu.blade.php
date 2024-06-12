@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PASTOR CAFFE</title>
+    <title>PASTOR CAFE</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
@@ -13,7 +13,7 @@
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
             <a href="index.html" class="navbar-brand px-lg-4 m-0">
-                <h1 class="m-0 display-4 text-uppercase text-white">PASTOR CAFFE</h1>
+                <h1 class="m-0 display-4 text-uppercase text-white">PASTOR CAFE</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@
                     <a href="/" class="nav-item nav-link">Home</a>
                     <a href="/about" class="nav-item nav-link">About</a>
                     <a href="/service" class="nav-item nav-link">Service</a>
-                    <a href="/menu" class="nav-item nav-link active">Menu</a>
+                    <a href="/viewMenu" class="nav-item nav-link active">Menu</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu text-capitalize">
@@ -74,167 +74,49 @@
     <!-- Menu Start -->
     <div class="container-fluid pt-5">
         <div class="container">
-            
+
             <!-- Drink -->
             <div class="section-title">
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Menu & Pricing</h4>
-                <h1 class="display-4">Drink</h1>
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <h1 class="mb-5">Hot Coffee</h1>
+                    <h1 class="mb-5">DRINK</h1>
                     <div class="row align-items-center mb-5">
+                        @foreach ($minuman as $produk)
+
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="">
-                            <h7 class="menu-price">20.4K</h7>
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="{{ asset('/storage/images/' . $produk->gambar_produk) }}" alt="">
+                            <h7 class="menu-price">{{$produk->harga_produk}}</h7>
                         </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Americano Hot</h4>
+                        <div class="col-8 col-sm-9 mb-5">
+                            <h4>{{ $produk->nama_produk }}</h4>
                             <p class="m-0">An americano is just water and espresso. It'll either be served 1/2 and 1/2
                                 or 1/3 espresso to 2/3 water, depending on the coffee shop in question or how you've
                                 chosen to brew it.</p>
                         </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
-                        <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="">
-                            <h7 class="menu-price">26.4K</h7>
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Cafe Latte Hot</h4>
-                            <p class="m-0">A latte or caffè latte is a milk coffee that is a made up of one or two shots
-                                of espresso, steamed milk and a final, thin layer of frothed milk on top.</p>
-                        </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
-                        <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="">
-                            <h7 class="menu-price">28.8K</h7>
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Chocolate Hot</h4>
-                            <p class="m-0">Hot chocolate, also known as hot cocoa or drinking chocolate, is a heated
-                                drink consisting of shaved chocolate, melted chocolate or cocoa powder, heated milk or
-                                water, and usually a sweetener like whipped cream or marshmallows.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="mb-5">Cold Coffee</h1>
-                    <div class="row align-items-center mb-5">
-                        <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/black-coffee-cold.jpg" alt="">
-                            <h7 class="menu-price">21.4K</h7>
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Black Coffee</h4>
-                            <p class="m-0">Black coffee is usually prepared in hot, iced, or cold versions. It is
-                                traditionally brewed with fresh coffee bean powder or instant powder without creamer or
-                                milk.</p>
-                        </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
-                        <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/iced-latte.jpg" alt="">
-                            <h7 class="menu-price">26.4K</h7>
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Cafe Latte Ice</h4>
-                            <p class="m-0">A latte or caffè latte is a milk coffee that is a made up of one or two shots
-                                of espresso, steamed milk and a final, thin layer of frothed milk on top.</p>
-                        </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
-                        <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/cappucino ice.jpeg" alt="">
-                            <h7 class="menu-price">28.8K</h7>
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Cappucino Ice</h4>
-                            <p class="m-0">An iced cappuccino is a coffee drink with espresso, milk, ice, and optional
-                                sweetener. It's very similar to an iced latte, which makes sense since a cappuccino vs
-                                latte are incredibly similar.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        @endforeach
 
-            <!-- Food -->
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Menu & Pricing</h4>
-                <h1 class="display-4">Food</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1 class="mb-5">Eatery</h1>
-                    <div class="row align-items-center mb-5">
-                        <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/chicken-salted.jpg" alt="">
-                            <h7 class="menu-price">20.4K</h7>
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Chicken Salted Egg Bowl</h4>
-                            <p class="m-0">Chicken Meat Coated with Salted Egg Sauce + Coleslaw Salad + Half Boiled Egg.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
-                        <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/chicken-cheese.jpg" alt="">
-                            <h7 class="menu-price">26.4K</h7>
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Chicken Cheese Bowl</h4>
-                            <p class="m-0">Chicken Meat Coated With Special Cheese Sauce + Coleslaw Salad + Half Boiled
-                                Egg.</p>
-                        </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
-                        <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/dorry salt.jpeg" alt="">
-                            <h7 class="menu-price">28.8K</h7>
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Dory Salted Egg Bowl</h4>
-                            <p class="m-0">Dori Meat Coated with Salted Egg Special Sauce + Coleslaw Salad + Half Boiled
-                                Egg.</p>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h1 class="mb-5">Pasta</h1>
+                    <h1 class="mb-5">FOOD</h1>
                     <div class="row align-items-center mb-5">
+                        @foreach ($makanan as $produk)
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/carbonara.jpeg" alt="">
-                            <h7 class="menu-price">21.4K</h7>
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="{{ asset('/storage/images/' . $produk->gambar_produk) }}" alt="">
+                            <h7 class="menu-price">{{$produk->harga_produk}}</h7>
                         </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Carbonara Sauce</h4>
-                            <p class="m-0">Spaghetti Served With Carbonara Sauce.</p>
+                        <div class="col-8 col-sm-9 mb-5">
+                            <h4>{{ $produk->nama_produk }}</h4>
+                            <p class="m-0">An americano is just water and espresso. It'll either be served 1/2 and 1/2
+                                or 1/3 espresso to 2/3 water, depending on the coffee shop in question or how you've
+                                chosen to brew it.</p>
                         </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
-                        <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/tuna-pasta.jfif" alt="">
-                            <h7 class="menu-price">26.4K</h7>
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Tuna Spicy Pasta</h4>
-                            <p class="m-0">Spaghetti With Tuna And Spicy Seasoning.</p>
-                        </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
-                        <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/seafood.webp" alt="">
-                            <h7 class="menu-price">28.8K</h7>
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Seafood Aglio Olio</h4>
-                            <p class="m-0">Spaghetti Served With Garlic Nuances And The Aroma Of Italian Spices + Squid
-                                And Shrimp.</p>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -280,8 +162,8 @@
             </div>
         </div>
         <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-            <p class="mb-2 text-white">Copyright &copy; All Rights Reserved.</a></p>
-            <p class="m-0 text-white">Made with ❤️</a></p>
+            <p class="mb-2 text-white">Copyright &copy; ITATS.</a></p>
+            
         </div>
     </div>
     <!-- Footer End -->
